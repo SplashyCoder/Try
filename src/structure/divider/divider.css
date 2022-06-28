@@ -1,0 +1,16 @@
+.DividerContainer{
+    width: 100%;
+    display: grid;
+    place-content: center!important;
+}
+.DividerContainer>h1{
+    color:#000;
+    align-items: center;
+}
+
+.DividerLine{
+    margin-top: 15px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent,#9d41e7 , transparent); 
+}

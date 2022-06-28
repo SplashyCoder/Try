@@ -1,0 +1,94 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal, .overlay {
+    background: rgba(157, 121, 199, 0.6);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+}   
+
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalPresentation{
+    display: inline-block;
+    width: 425px;
+    height: 250px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.modalButton{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.modalPrincipal>img{
+    width: 10em;
+    height: 10em;
+}
+
+.modalList{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.certificateLink{
+    height: 70px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+.certificateContainer{
+    width: 50%;
+}
+
+.certificateImage{
+    width: 50px;
+}
+
+.imageButton{
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+}
+
+.imagePrincipal{
+    width: 90px;
+    height: 90px;
+}

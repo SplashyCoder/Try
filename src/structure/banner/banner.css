@@ -1,0 +1,16 @@
+.bannerContainer{
+    display: flex;
+    height: 50em;
+    background-image: url(https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bannerTextContainer{
+    display:flex;
+    flex-grow: 10;
+    color: rgb(248, 242, 242);
+}
+.bannerText{
+    font-size: 2.5em;
+}
