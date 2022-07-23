@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import './card.css'
 
+const Card = (props) =>{
+    return(
+        <div className="cardContent">
+            {props.children}
+        </div>
+    )
+}
 
 const CardImage = ({image, link}) =>{
     return(
@@ -85,7 +92,7 @@ const CardModal = (props) =>{
     );
 }
 const CardModules = {
-    CardCertificate, CardImage, CardPresentation, CardModal
+   Card, CardCertificate, CardImage, CardPresentation, CardModal
 }
 
 export default CardModules

@@ -12,7 +12,9 @@ import Education from './pages/education/education'
 import Project from './pages/projects/projects'
 // import Contact from './pages/contact/contact'
 import About from './pages/about/about'
+import CardModules from '../src/structure/card/card'
 import Home from './pages/home/home'
+
 
 
 
@@ -42,12 +44,21 @@ const App = () => (
   <Divider
     title='Sobre mi'
   />
-  
+  <CardModules.Card>
+    <p>
+      Soy una persona paciente, con buenas habilidades blandas y técnicas
+      adicionalmente me mantengo en contacto con las habilidades y herramientas en
+      la vanguardia del desarrollo. Tengo experiencia con proyectos tanto propios como
+      académicos en roles Frontend y Backend. Trabajo principalmente en plataformas
+      Linux, sin embargo, me desenvuelvo con facilidad en entornos Windows o Mac.
+    </p>
+  </CardModules.Card>
   <DividerDown/>
   <Divider
     title='Contacto'
   />  
     <Contact/>
+    
   <DividerDown/>
   <Routes>
     <Route path="/" element={<Home/>} />

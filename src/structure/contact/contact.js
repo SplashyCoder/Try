@@ -3,8 +3,19 @@ import React, { useState } from "react";
 import CardModules from '../card/card';
 
 
-const Mail = () =>(
-    <div className="mail">
+const Mail = () =>{
+    const [mail, setModal] = useState(false);
+
+    const toggleModal = () => {
+        setModal(!mail);
+    };
+    if(mail) {
+        document.body.classList.add('active-modal')
+    } else {
+        document.body.classList.remove('active-modal')
+    }
+   return(
+        <div className="mail">
         <article className='mailForm'>
             <section className="mailFormContainer">
                 <h3 className='mailFormTitle'>Nombre</h3>
@@ -21,12 +32,14 @@ const Mail = () =>(
             <section className="mailFormContainer">
                 <h3 className='mailFormTitle'>Descripcion</h3>
                 <input className='mailFormBox'>
-                    
+
                 </input>
             </section>
+            <button className="mailButton" onClick={toggleModal} > Enviar </button>
         </article>
     </div>
-)
+   )
+}
 
 const ModalContact = (props) =>{
 
@@ -83,15 +96,15 @@ const Contact = ({}) =>{
                     image  = 'https://cdn-icons-png.flaticon.com/512/174/174857.png'
                     link = 'https://www.linkedin.com/in/david-pacheco-166623227/'
                 />
-            </section>
-            <section className="contactCard">
+            </section> 
+            {/* <section className="contactCard">
                 <ModalContact
                     image  = 'https://cdn-icons-png.flaticon.com/512/646/646094.png'
                     resume = 'Email'
                 >
                     <Mail/>
                 </ModalContact>
-            </section>
+            </section> */} 
         </div>
 
     )
