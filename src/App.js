@@ -1,35 +1,37 @@
 import './App.css';
 
+
 // import Header from './structure/header/header'
-// import Banner from './structure/banner/banner';
+import Banner from './structure/banner/banner';
 import Slider from './structure/slider/slider'
 import Slider2 from './structure/slider/slider2'
 import{ Divider, DividerDown} from './structure/divider/divider';
 import Contact from './structure/contact/contact'
+import Footer from './structure/footer/footer';
 
 
-import Education from './pages/education/education'
-import Project from './pages/projects/projects'
+// import Education from './pages/education/education'
+// import Project from './pages/projects/projects'
 // import Contact from './pages/contact/contact'
-import About from './pages/about/about'
+// import About from './pages/about/about'
 import CardModules from '../src/structure/card/card'
-import Home from './pages/home/home'
-
-
+// import Home from './pages/home/home'
 
 
 import{
   BrowserRouter as Router,
-  Routes,
-  Route
+  // Routes,
+  // Route
 }from "react-router-dom"
 
 const App = () => (
 <Router>
-  {/* <Banner/> */}
+  <Banner>
+    <img src={require('./multimedia/images/profile.jpeg')} alt="" srcset="" />
+  </Banner>
   {/* <Header
     titulo='David Pacheco'
-    logo="https://cdn-icons-png.flaticon.com/512/518/518713.png"
+    logo={require('./multimedia/images/linux.png')} 
   /> */}
   <Divider
     title='Habilidades'
@@ -60,13 +62,14 @@ const App = () => (
     <Contact/>
     
   <DividerDown/>
-  <Routes>
+  <Footer/>
+  {/* <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="" element={<Project/>} />
     <Route path="" element={<Education/>} />
     <Route path="" element={<About/>} />
     <Route path="" element={<Contact/>} />
-  </Routes>
+  </Routes> */}
 </Router>
 )
 

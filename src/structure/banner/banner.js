@@ -1,6 +1,5 @@
 import './banner.css'
-
-const Banner = () =>(
+const Banner = (props) =>(
     <div className="bannerContainer">
         <div className="bannerTextContainer">
             <aside>
@@ -11,6 +10,7 @@ const Banner = () =>(
             </i>
             </aside>
         </div>
+        <div className="bannerImgContaier">{props.children}</div>
     </div>
-)
+)   
 export default Banner

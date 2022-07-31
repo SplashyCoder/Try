@@ -1,0 +1,9 @@
+.footerContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footerLink{
+    text-decoration: none;
+    color: black;
+}

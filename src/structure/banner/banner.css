@@ -1,16 +1,36 @@
 .bannerContainer{
     display: flex;
     height: 50em;
+    /* text-align: center; */
     background-image: url(https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding: 1em;
+    gap: 1em;
 }
 
+.bannerImgContaier{ 
+    display: flex;
+    flex-direction: column ;
+    height: 50%;
+    width: 32%;
+    flex-grow: 1;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+}
 .bannerTextContainer{
+    width: 50%;
     display:flex;
-    flex-grow: 10;
+    flex-direction: column;
+    flex-grow: 1;
     color: rgb(248, 242, 242);
+
 }
 .bannerText{
     font-size: 2.5em;
 }
+
+

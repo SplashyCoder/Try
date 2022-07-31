@@ -82,7 +82,7 @@ const CardModal = (props) =>{
                             <div className="modalList">{props.children}
                             </div>
                         <button className="close-modal" onClick={toggleModal}>
-                            X
+                            CLOSE
                         </button>
                     </div>
                 </div>
